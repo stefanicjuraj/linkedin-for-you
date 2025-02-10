@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "LinkedIn For You",
+  "version": "1.0.0",
+  "description": "Browser extension to remove LinkedIn's suggested posts and promoted content.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.linkedin.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
